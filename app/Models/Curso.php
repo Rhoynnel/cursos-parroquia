@@ -10,6 +10,7 @@ class Curso extends Model
 
     protected $fillable = [
         'descripcion',
+        'status',
     ];
 
     public function catequesis()

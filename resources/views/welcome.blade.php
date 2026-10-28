@@ -37,7 +37,7 @@
 
         <!-- Botón destacado al Formulario -->
         <div class="mt-8 flex flex-col sm:flex-row gap-4">
-            <a href="#" 
+            <a href="{{ route('inscripcion.index') }}" 
                class="bg-blue-600 hover:bg-blue-500 text-white font-bold px-8 py-4 rounded-xl shadow-lg transition transform hover:-translate-y-0.5">
                 Iniciar Inscripción
             </a>

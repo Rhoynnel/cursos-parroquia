@@ -18,14 +18,15 @@
               <li><a class="dropdown-item" href="{{route('dashboard')}}">Panel Inicial</a></li>
               <li>
                 <a class="dropdown-item active" href="#" aria-current="page"
-                  >Productos</a>
+                  >Catequesis</a>
                   <ul>
-                    <li><a class="dropdown-item" href="#">Producto</a></li>
-                    <li><a class="dropdown-item" href="#">Categoria</a></li>
+                    <li><a class="dropdown-item" href="{{ route('catequesis.index') }}">Catequesis</a></li>
+                    <li><a class="dropdown-item" href="{{ route('representante.index') }}">Representantes</a></li>
+                    <li><a class="dropdown-item" href="{{ route('estudiante.index') }}">Estudiantes</a></li>
                   </ul>
               </li>
-              <li><a class="dropdown-item" href="#">Despachos</a></li>
-              <li><a class="dropdown-item" href="#">Compras</a></li>
+              <li><a class="dropdown-item" href="{{ route('centro.index') }}">Centros</a></li>
+              <li><a class="dropdown-item" href="{{ route('curso.index') }}">Cursos</a></li>
               <li><hr class="dropdown-divider" /></li>
               <li><a class="dropdown-item" href="#">Centro de Consultas</a></li>
               <li><a class="dropdown-item" href="#">Reportes</a></li>

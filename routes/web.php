@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\inscripcionController;
+use App\Http\Controllers\InscripcionController;
 use App\Http\Controllers\CentrosController;
 use App\Http\Controllers\CursosController;
 use App\Http\Controllers\CatequesisController;
@@ -11,8 +11,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/inscripcion', [inscripcionController::class, 'index'])->name('inscripcion.index');
-Route::post('/inscripcion', [inscripcionController::class, 'store'])->name('inscripcion.store');
+Route::get('/inscripcion', [InscripcionController::class, 'index'])->name('inscripcion.index');
+Route::post('/inscripcion', [InscripcionController::class, 'store'])->name('inscripcion.store');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
